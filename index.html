@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bonifiche Ferraresi - Sostenibilità ESG</title>
+
+    <!--
+        Collegamento al foglio di stile esterno.
+        Il file style.css gestisce tutta la parte grafica della pagina:
+        layout, colori, card cliccabili, pulsanti, sezioni responsive e footer.
+    -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER =================
+        L'header contiene logo, titolo e menu di navigazione.
+        I link del menu sono ancore interne, quindi portano direttamente
+        alle sezioni della stessa pagina senza usare JavaScript.
+    -->
+    <header class="header">
+        <div class="logo-title">
+            <img src="immagini/logo-bf.png" alt="Logo Bonifiche Ferraresi" class="logo">
+            <h1>Bonifiche Ferraresi S.p.A.</h1>
+        </div>
+
+        <nav class="nav-menu" aria-label="Menu principale">
+            <a href="#chi-siamo">Chi siamo</a>
+            <a href="#azienda">Azienda</a>
+            <a href="#sostenibilita">ESG</a>
+            <a href="#dove">Dove ci troviamo</a>
+            <a href="#download">Report</a>
+            <a href="#contatti">Contatti</a>
+        </nav>
+    </header>
+
+    <!-- ================= HERO =================
+        Sezione iniziale con immagine di sfondo e testo introduttivo.
+        Il pulsante è un collegamento interno alla sezione download.
+    -->
+    <section class="hero">
+        <div class="hero-content">
+            <p class="eyebrow">Project Work ESG</p>
+            <h2>Sostenibilità e innovazione in agricoltura</h2>
+            <p>
+                Pagina divulgativa dedicata alle attività ambientali, sociali e di governance
+                di Bonifiche Ferraresi S.p.A., realizzata con HTML e CSS.
+            </p>
+            <a href="#download" class="btn hero-btn">Scarica il report</a>
+        </div>
+    </section>
+
+    <main>
+        <!-- ================= CHI SIAMO =================
+            Sezione descrittiva che presenta l'impresa e il motivo della scelta.
+        -->
+        <section id="chi-siamo" class="section">
+            <div class="section-heading">
+                <p class="section-label">Chi siamo</p>
+                <h2>Una realtà agricola italiana orientata alla filiera</h2>
+            </div>
+
+            <div class="two-columns">
+                <div>
+                    <p>
+                        Bonifiche Ferraresi S.p.A. appartiene al settore agricolo e agroindustriale.
+                        Il settore primario è direttamente collegato alla gestione responsabile del suolo,
+                        dell'acqua, dell'energia e delle risorse naturali.
+                    </p>
+                    <p>
+                        Il progetto web sintetizza i contenuti dell'ultimo report disponibile in una pagina
+                        semplice e navigabile, pensata per comunicare le principali informazioni ESG a studenti,
+                        stakeholder e utenti interessati alla sostenibilità.
+                    </p>
+                </div>
+
+                <aside class="info-box">
+                    <h3>Obiettivo comunicativo</h3>
+                    <p>
+                        Rendere più accessibile la rendicontazione di sostenibilità attraverso una pagina web
+                        chiara, responsive e basata esclusivamente su HTML e CSS.
+                    </p>
+                </aside>
+            </div>
+        </section>
+
+        <!-- ================= AZIENDA =================
+            Questa sezione collega il contesto dell'impresa al settore primario.
+        -->
+        <section id="azienda" class="section light-section">
+            <div class="section-heading">
+                <p class="section-label">Contesto aziendale</p>
+                <h2>Un modello agroindustriale orientato alla sostenibilità</h2>
+                <p>
+                    Nel settore agricolo la sostenibilità non riguarda solo l'ambiente, ma anche
+                    qualità della filiera, sicurezza alimentare, innovazione tecnologica, lavoro e governance.
+                </p>
+            </div>
+
+            <div class="context-grid">
+                <article class="context-card">
+                    <h3>Settore primario</h3>
+                    <p>
+                        L'attività agricola richiede una gestione attenta di acqua, suolo, biodiversità
+                        ed energia, risorse centrali per la continuità produttiva.
+                    </p>
+                </article>
+
+                <article class="context-card">
+                    <h3>Filiera agroalimentare</h3>
+                    <p>
+                        La tracciabilità e la qualità dei prodotti contribuiscono a creare fiducia
+                        verso consumatori, investitori, comunità locali e partner commerciali.
+                    </p>
+                </article>
+
+                <article class="context-card">
+                    <h3>Innovazione</h3>
+                    <p>
+                        Agricoltura di precisione, digitalizzazione e controllo dei processi aiutano
+                        a ridurre sprechi e migliorare efficienza, sicurezza e sostenibilità.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <!-- ================= SOSTENIBILITÀ ESG =================
+            Le tre card sono cliccabili usando <details> e <summary>.
+            Questa scelta permette di aprire e chiudere i dettagli direttamente con HTML,
+            senza usare JavaScript. Ogni card contiene dati sintetici dell'ultimo report
+            e un breve commento interpretativo.
+        -->
+        <section id="sostenibilita" class="section">
+            <div class="section-heading">
+                <p class="section-label">Dati dal report</p>
+                <h2>Ambiente, sociale e governance</h2>
+                <p>
+                    Clicca sulle card per visualizzare statistiche e informazioni più dettagliate
+                    tratte dalla rendicontazione più recente disponibile.
+                </p>
+            </div>
+
+            <div class="cards">
+                <!-- CARD AMBIENTE
+                    Il tag <summary> è la parte sempre visibile della card.
+                    Il contenuto dentro <div class="card-details"> compare quando la card viene aperta.
+                -->
+                <details class="card green-card">
+                    <summary>
+                        <span class="card-icon">🌱</span>
+                        <span class="card-title">Ambiente</span>
+                        <span class="card-preview">
+                            Cambiamento climatico, suolo, biodiversità e gestione degli impatti ambientali.
+                        </span>
+                        <span class="click-label">Apri dettagli</span>
+                    </summary>
+
+                    <div class="card-details">
+                        <p class="source-note">Fonte sintetica: Annual Report / Rendicontazione 2025.</p>
+
+                        <div class="report-stats">
+                            <div class="stat-item">
+                                <strong>0</strong>
+                                <span>incidenti ambientali significativi nel 2025 su suolo, sottosuolo, acque superficiali e biodiversità.</span>
+                            </div>
+                            <div class="stat-item">
+                                <strong>Medio</strong>
+                                <span>livello di rischio residuo per i rischi fisici climatici dopo le misure di mitigazione.</span>
+                            </div>
+                            <div class="stat-item">
+                                <strong>Medio-basso</strong>
+                                <span>livello di rischio residuo per i rischi di transizione verso un'economia a basse emissioni.</span>
+                            </div>
+                        </div>
+
+                        <p>
+                            La card Ambiente mostra che il report non si limita a descrivere iniziative generiche,
+                            ma collega la sostenibilità agricola alla gestione del rischio climatico, alla tutela
+                            delle risorse naturali e alla prevenzione degli impatti ambientali.
+                        </p>
+                    </div>
+                </details>
+
+                <!-- CARD SOCIALE
+                    Qui vengono inseriti dati su personale, formazione e sicurezza.
+                    L'obiettivo è mostrare il collegamento tra sostenibilità e capitale umano.
+                -->
+                <details class="card white-card">
+                    <summary>
+                        <span class="card-icon">👥</span>
+                        <span class="card-title">Sociale</span>
+                        <span class="card-preview">
+                            Dipendenti, formazione, sicurezza sul lavoro e sviluppo delle competenze.
+                        </span>
+                        <span class="click-label">Apri dettagli</span>
+                    </summary>
+
+                    <div class="card-details">
+                        <p class="source-note">Fonte sintetica: Annual Report / Rendicontazione 2025.</p>
+
+                        <div class="report-stats">
+                            <div class="stat-item">
+                                <strong>34 FTE</strong>
+                                <span>dipendenti medi annui nel 2025, rispetto a 33 FTE nel 2024.</span>
+                            </div>
+                            <div class="stat-item">
+                                <strong>9 + 25</strong>
+                                <span>9 dirigenti e 25 quadri/impiegati indicati nella ripartizione del personale.</span>
+                            </div>
+                            <div class="stat-item">
+                                <strong>5.880 mila €</strong>
+                                <span>costi per il personale nel 2025, in crescita rispetto ai 5.144 mila € del 2024.</span>
+                            </div>
+                        </div>
+
+                        <p>
+                            La card Sociale evidenzia il ruolo delle persone nella sostenibilità aziendale.
+                            Il report richiama la formazione obbligatoria in materia di salute e sicurezza,
+                            la sorveglianza sanitaria e lo sviluppo di competenze anche in ambito digitale e cybersecurity.
+                        </p>
+                    </div>
+                </details>
+
+                <!-- CARD GOVERNANCE
+                    Questa card riguarda trasparenza, controllo dei rischi e struttura di governance.
+                    Anche qui i dati sono presentati in forma sintetica per agevolare la lettura.
+                -->
+                <details class="card red-card">
+                    <summary>
+                        <span class="card-icon">📊</span>
+                        <span class="card-title">Governance</span>
+                        <span class="card-preview">
+                            Trasparenza, controlli interni, gestione dei rischi e composizione degli organi societari.
+                        </span>
+                        <span class="click-label">Apri dettagli</span>
+                    </summary>
+
+                    <div class="card-details">
+                        <p class="source-note">Fonte sintetica: Relazione governance e Annual Report 2025.</p>
+
+                        <div class="report-stats">
+                            <div class="stat-item">
+                                <strong>7</strong>
+                                <span>amministratori indipendenti indicati nella relazione sul governo societario.</span>
+                            </div>
+                            <div class="stat-item">
+                                <strong>63,6%</strong>
+                                <span>quota di amministratori indipendenti sul totale del Consiglio di Amministrazione.</span>
+                            </div>
+                            <div class="stat-item">
+                                <strong>H24/365</strong>
+                                <span>monitoraggio SOC per la sicurezza informatica citato tra i presidi di controllo.</span>
+                            </div>
+                        </div>
+
+                        <p>
+                            La card Governance mostra come la sostenibilità dipenda anche da controllo,
+                            trasparenza e gestione dei rischi. Nel report sono richiamati modelli organizzativi,
+                            controlli interni, cybersecurity e informativa verso stakeholder e investitori.
+                        </p>
+                    </div>
+                </details>
+            </div>
+        </section>
+
+        <!-- ================= DOVE CI TROVIAMO ================= -->
+        <section id="dove" class="section light-section">
+            <div class="section-heading">
+                <p class="section-label">Dove ci troviamo</p>
+                <h2>Presenza territoriale e legame con il territorio</h2>
+                <p>
+                    La sede sociale indicata dal sito ufficiale è in Via Cavicchini, 2,
+                    Jolanda di Savoia, in provincia di Ferrara.
+                </p>
+            </div>
+
+            <div class="location-box">
+                <div>
+                    <h3>Sede e informazioni ufficiali</h3>
+                    <p>
+                        Per sedi, aggiornamenti societari e documenti ufficiali è consigliabile consultare
+                        direttamente il sito aziendale, così da usare informazioni sempre corrette.
+                    </p>
+                </div>
+
+                <a href="https://www.bfspa.it/" class="btn" target="_blank" rel="noopener noreferrer">
+                    Vai al sito ufficiale
+                </a>
+            </div>
+        </section>
+
+        <!-- ================= PROCESSO =================
+            Sezione utile per spiegare nel rapporto il metodo seguito nello sviluppo.
+        -->
+        <section id="processo" class="section">
+            <div class="section-heading">
+                <p class="section-label">Processo di sviluppo</p>
+                <h2>Dall'analisi del report alla pagina web</h2>
+            </div>
+
+            <div class="steps">
+                <div class="step">
+                    <span>1</span>
+                    <p>Selezione dell'impresa del settore primario e raccolta dell'ultimo report disponibile.</p>
+                </div>
+                <div class="step">
+                    <span>2</span>
+                    <p>Analisi dei contenuti ESG e scelta dei dati da mostrare nelle card cliccabili.</p>
+                </div>
+                <div class="step">
+                    <span>3</span>
+                    <p>Realizzazione della struttura HTML con sezioni ordinate e navigazione interna.</p>
+                </div>
+                <div class="step">
+                    <span>4</span>
+                    <p>Creazione del CSS con palette bianco, verde e rosso e layout responsive.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= DOWNLOAD =================
+            Pulsante per scaricare il report inserito nella cartella /report.
+            Il nome del file nel link deve corrispondere esattamente al PDF presente nella repository.
+        -->
+        <section id="download" class="download">
+            <div class="download-box">
+                <p class="section-label">Documento ufficiale</p>
+                <h2>Report di sostenibilità</h2>
+                <p>
+                    Scarica il report inserito nella repository per consultare il documento completo
+                    relativo alla rendicontazione di sostenibilità dell'impresa.
+                </p>
+
+                <a href="report/Report_Sostenibilita_2025.pdf" class="btn" download>
+                    Scarica il Report PDF
+                </a>
+            </div>
+        </section>
+
+        <!-- ================= CONTATTI ================= -->
+        <section id="contatti" class="section contact-section">
+            <div class="section-heading">
+                <p class="section-label">Contatti</p>
+                <h2>Riferimenti ufficiali</h2>
+                <p>
+                    Per approfondimenti sull'impresa e sui documenti societari è possibile consultare
+                    i canali ufficiali di Bonifiche Ferraresi / BF S.p.A.
+                </p>
+            </div>
+
+            <div class="contact-grid">
+                <article class="contact-card">
+                    <h3>Sito web</h3>
+                    <a href="https://www.bfspa.it/" target="_blank" rel="noopener noreferrer">www.bfspa.it</a>
+                    <h3>Telefono</h3>
+                    <a href="tel:+390532836102">+39 0532 836102</a>
+                    <h3>Mail</h3>
+                    <a href="mailto:info@bfspa.it">info@bfspa.it</a>
+                    <h3>Pec</h3>
+                    <a href="mailto:Ferraresibon@legalmail.it">Ferraresibon@legalmail.it</a>
+
+                </article>
+
+                <article class="contact-card">
+                    <h3>Documenti</h3>
+                    <p>Report, comunicati e informazioni societarie disponibili sul sito ufficiale.</p>
+                </article>
+
+                
+            </div>
+        </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+        <p>Project Work - Davide Carobene</p>
+        <p>
+            Repository GitHub:
+            <a href="https://github.com/" target="_blank" rel="noopener noreferrer">Visualizza progetto</a>
+        </p>
+    </footer>
+
+</body>
+</html>
