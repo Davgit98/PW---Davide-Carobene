@@ -365,15 +365,24 @@ a {
     font-weight: 800;
     padding: 8px 12px;
     border-radius: 999px;
+    font-size: 0; /* Nasconde il testo presente nell'HTML */
 }
 
+/* Testo mostrato quando la card è chiusa */
+.click-label::before {
+    content: "Apri dettagli";
+    font-size: 0.95rem;
+}
+
+/* Quando la card è aperta */
 .card[open] .click-label {
     background: #fff5f5;
     color: var(--red-main);
 }
 
-.card[open] .click-label::after {
-    content: " visualizzati";
+/* Cambia il testo quando la card è aperta */
+.card[open] .click-label::before {
+    content: "Chiudi dettagli";
 }
 
 .card-details {
