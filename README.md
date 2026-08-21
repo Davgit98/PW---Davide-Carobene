@@ -3,7 +3,7 @@
 # Matricola 0312400270
 
 ## Descrizione
-Il progetto presenta una pagina web dedicata alla sostenibilità di Bonifiche Ferraresi S.p.A., impresa appartenente al settore primario/agroindustriale. La pagina sintetizza le informazioni dell'ultimo report disponibile e permette il download del documento inserito nella repository.
+Il progetto presenta una pagina web dedicata alla sostenibilità di Bonifiche Ferraresi S.P.A., impresa appartenente al settore primario/agroindustriale. La pagina sintetizza le informazioni dell'ultimo report disponibile e permette il download del documento inserito nella repository.
 
 ## Obiettivo
 L'obiettivo è trasformare i contenuti del report di sostenibilità in una pagina semplice, ordinata e consultabile, realizzata esclusivamente con HTML e CSS.
